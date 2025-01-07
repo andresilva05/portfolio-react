@@ -1,13 +1,13 @@
-import { Container } from "./styles";
 import GlobalStyles from "./globalStyles";
-import IntroSection from "./IntroSection";
+import IntroSection from "./pages/IntroSection";
+import AboutMe from "./pages/AboutMe";
 
 export default function App() {
   return (
     <>
       <GlobalStyles />
-      <Container />
       <IntroSection />
+      <AboutMe />
     </>
   );
 }
