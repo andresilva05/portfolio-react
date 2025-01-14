@@ -13,7 +13,7 @@ export default function AboutMe() {
     <AboutSection>
       <ProfileImage src={AboutMeImg} />
       <TextSection>
-        <AboutTitle>Sobre mim</AboutTitle>
+        <AboutTitle id="sobre">Sobre mim</AboutTitle>
         <AboutText>
           Olá, sou Wilson André, Programador Front-End e apaixonado por
           tecnologia! Meu objetivo é transformar ideias em soluções reais por
