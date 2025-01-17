@@ -27,23 +27,23 @@ export const Title = styled.h2`
 export const StyledNav = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
+  justify-content: space-between; /* Garante que os itens fiquem nas extremidades */
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 25px;
 
   @media (max-width: 768px) {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    flex-direction: row; /* Mantém os itens na mesma linha */
+    justify-content: space-between; /* Mantém o espaçamento em telas menores */
   }
 
   @media (max-width: 480px) {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 15px;
   }
 `;
+
 
 export const NavList = styled.ul`
   list-style: none;
