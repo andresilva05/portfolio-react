@@ -1,21 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import {
-  ContainerHeader,
-  MyName,
-  NavItem,
-  NavList,
-  StyledNav,
-  Title,
-} from "./styles";
+import { ContainerHeader, MyName, StyledNav, Title } from "./styles";
 import TypingAnimation from "../../components/TypingContainer";
-// import Particles from "react-tsparticles
-
-// import ParticlesBackground from "../../components/ParticlesBackground";
+import MenuHamburguer from "../../components/MenuHamburguer";
 
 export default function IntroSection() {
   const headingRef = useRef(null); // Referência para o <h1>
   const [silvaColor, setSilvaColor] = useState("#fa0707"); // Estado para a cor de "Silva"
-  // const [desenvolvedorColor, setDesenvolvedorColor] = useState("#ffffff"); // Estado para a cor de "Programador"
 
   useEffect(() => {
     const h1Element = headingRef.current;
@@ -34,8 +24,6 @@ export default function IntroSection() {
       );
     }, 2000);
 
-
-
     // Limpa os intervalos ao desmontar o componente
     return () => {
       clearInterval(silvaInterval);
@@ -49,22 +37,7 @@ export default function IntroSection() {
           Portfo<span>lio</span>
         </Title>
 
-        <NavList>
-          <NavItem>
-            <a className="home" href="#inicio">
-              Home
-            </a>
-          </NavItem>
-          <NavItem>
-            <a href="#sobre">Sobre</a>
-          </NavItem>
-          <NavItem>
-            <a href="#projetos">Projetos</a>
-          </NavItem>
-          <NavItem>
-            <a href="#contato">Fale comigo</a>
-          </NavItem>
-        </NavList>
+        <MenuHamburguer />
       </StyledNav>
       <MyName>
         <h1>
