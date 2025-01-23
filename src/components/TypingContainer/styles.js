@@ -9,7 +9,6 @@ export const TypingContainer = styled.h3`
     90deg,
     #ff073a,
     #007bff
-   
   ); /* Gradiente azul e vermelho */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Faz o gradiente aparecer no texto */
@@ -24,7 +23,16 @@ export const TypingContainer = styled.h3`
     }
     25%,
     75% {
-      border-color: #fa0707;
+      border-color: rgba(250, 7, 7, 0.61);
     }
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    font-size: 1.5rem; /* Reduzindo o tamanho da fonte em telas menores */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem; /* Tamanho ainda menor em telas muito pequenas */
   }
 `;
