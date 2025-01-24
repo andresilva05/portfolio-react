@@ -7,7 +7,7 @@ import {
   TitleProject,
   TitleProjects,
 } from "./styles";
-import MyApproach from "../MyApproach";
+// import MyApproach from "../MyApproach";
 import burguerImg from "../../assets/burger 1.png";
 import contaUserImg from "../../assets/conta-de-usuario.png";
 import burguerMenu from "../../assets/hamburguer.png";
@@ -114,7 +114,7 @@ export default function MainProjects() {
 
   return (
     <div style={{ background: "#191919" }}>
-        <MyApproach />
+        {/* <MyApproach /> */}
       <TitleProjects id="projetos">Principais Projetos</TitleProjects>
       <CardProjects>
         {projects.map((projeto, index) => (
