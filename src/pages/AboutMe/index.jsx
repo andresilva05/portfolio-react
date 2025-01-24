@@ -1,5 +1,9 @@
 import AnimationAboutMe from "../../components/AnimationAboutMe";
-import { AboutSection, AboutText, TextSection } from "./styles";
+import { AboutSection, AboutText, ContainerSkill, TextSection } from "./styles";
+import { FaHtml5 } from "react-icons/fa6";
+import { IoLogoCss3 } from "react-icons/io";
+import { FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import { IoGitBranch } from "react-icons/io5";
 
 export default function AboutMe() {
   return (
@@ -20,6 +24,17 @@ export default function AboutMe() {
           soluções criativas e eficientes que atendam às necessidades dos
           usuários, mantendo-me atualizado com as inovações do setor.
         </AboutText>
+        <ContainerSkill>
+          <h1>Habilidades:</h1>
+          <div>
+            <FaHtml5 size={32} color="#fa0000" />
+            <IoLogoCss3 size={32} color="#fa0000" />
+            <FaJs size={32} color="#fa0000" />
+            <FaReact size={32} color="#fa0000" />
+            <FaNodeJs size={32} color="#fa0000" />
+            <IoGitBranch size={32} color="#fa0000" />
+          </div>
+        </ContainerSkill>
       </TextSection>
     </AboutSection>
   );
