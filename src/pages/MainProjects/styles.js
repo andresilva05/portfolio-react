@@ -5,6 +5,7 @@ export const TitleProjects = styled.h2`
   color: #ffffff;
   font-size: 75px;
   text-align: center;
+  padding-top: 30px;
 
   @media (max-width: 768px) {
     font-size: 60px;
