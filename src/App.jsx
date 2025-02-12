@@ -4,7 +4,6 @@ import AboutMe from "./pages/AboutMe";
 import MainProjects from "./pages/MainProjects";
 import Footer from "./pages/Footer";
 
-
 export default function App() {
   return (
     <>
