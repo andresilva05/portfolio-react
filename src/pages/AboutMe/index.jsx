@@ -7,22 +7,28 @@ import { IoGitBranch } from "react-icons/io5";
 
 export default function AboutMe() {
   return (
-    <AboutSection>
+    <AboutSection id="sobre">
       <TextSection>
         <AnimationAboutMe />
         <AboutText>
-          Olá, sou Wilson André, Programador Front-End e apaixonado por
-          tecnologia! Meu objetivo é transformar ideias em soluções reais por
-          meio do desenvolvimento web. Tenho experiência na criação de
-          aplicações utilizando HTML, CSS e JavaScript, além de já ter concluído
-          o módulo de React no meu curso. Durante meus estudos, desenvolvi uma
-          aplicação completa, integrando front-end dinâmico e consumo de APIs, o
-          que me proporcionou uma visão prática e sólida do desenvolvimento
-          moderno. Estou sempre em busca de novas técnicas e tendências para
-          aprimorar minhas habilidades e criar experiências digitais
-          envolventes, funcionais e responsivas. Meu compromisso é oferecer
-          soluções criativas e eficientes que atendam às necessidades dos
-          usuários, mantendo-me atualizado com as inovações do setor.
+          Olá, eu sou o Wilson André – apaixonado por tecnologia e dedicado a
+          transformar ideias em experiências digitais únicas. Minha jornada no
+          desenvolvimento começou com uma base sólida em HTML, CSS e JavaScript,
+          e evoluiu para dominar frameworks modernos como React e React Native,
+          além do universo Node.js. Recentemente, concluí o curso DevClub
+          FullStack PRO (140 horas, ministrado por Rodolfo Mori, com conclusão
+          em 30/12/2024), onde aprofundei meus conhecimentos em tecnologias
+          essenciais e ferramentas como Git, GitHub, Figma, Insomnia, Docker e
+          Beekepper. Essa experiência me permitiu desenvolver projetos front-end
+          incríveis – incluindo meu próprio portfólio – e integrar APIs de forma
+          dinâmica, consolidando uma visão completa do ciclo de desenvolvimento
+          web. Além disso, iniciei minha trajetória acadêmica em Sistemas para
+          Internet no Instituto Federal de Araraquara, onde mergulhei em C e
+          lógica de programação. Apesar de ter interrompido temporariamente meus
+          estudos devido a um acidente, estou determinado a retornar e continuar
+          evoluindo. Estou sempre em busca de novas técnicas e tendências para
+          criar soluções criativas, eficientes e responsivas que encantem os
+          usuários. Vamos transformar suas ideias em realidade?
         </AboutText>
         <ContainerSkill>
           <h1>Habilidades:</h1>
