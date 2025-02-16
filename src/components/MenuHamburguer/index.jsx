@@ -16,6 +16,18 @@ export default function MenuHamburguer() {
     setIsMobile(window.innerWidth <= 768); // Atualiza o estado com base na largura da tela
   };
 
+  const handleMenuItemClick = (e) => {
+    setMenuOpen(false); // Fecha o menu ao clicar em um item
+    const target = e.target.getAttribute("href");
+    if (target) {
+      const element = document.querySelector(target);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" }); // Rola a página até a seção
+      }
+    }
+  };
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     window.addEventListener("resize", handleResize); // Atualiza o estado quando a tela é redimensionada
     return () => {
@@ -37,16 +49,28 @@ export default function MenuHamburguer() {
           </ContentMobile>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a href="#home" onClick={handleMenuItemClick}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#sobre">Sobre</a>
+              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a href="#sobre" onClick={handleMenuItemClick}>
+                Sobre
+              </a>
             </li>
             <li>
-              <a href="#projetos">Projetos</a>
+              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a href="#projetos" onClick={handleMenuItemClick}>
+                Projetos
+              </a>
             </li>
             <li>
-              <a href="#contato">Fale comigo</a>
+              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a href="#contato" onClick={handleMenuItemClick}>
+                Fale comigo
+              </a>
             </li>
           </ul>
         </Container>
