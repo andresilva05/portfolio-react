@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import {
   ActionButton,
   Card,
-  // CardProjects,
   Container,
   Header,
   ImgProject,
@@ -18,7 +19,6 @@ import {
   FullImg,
   ProjectsContainer,
   Subtitle,
-  // GithubLogo,
 } from "./styles";
 import burguerImg from "../../assets/img-codeClubBurguer.jpg";
 import contaUserImg from "../../assets/conta-de-usuario.png";
@@ -30,7 +30,6 @@ import responsivoImg from "../../assets/responsivo.png";
 import netflixImg from "../../assets/netflix.png";
 import starbuksImg from "../../assets/starbucks.png";
 import cronometroImg from "../../assets/crono.png";
-// import GithubImg from "../../assets/github-icon.png"
 import { Globe } from "phosphor-react";
 import { MarkGithubIcon } from "@primer/octicons-react";
 
@@ -146,6 +145,7 @@ export default function MainProjects() {
       <ProjectsContainer>
         <Container>
           {projects.map((project, index) => (
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
             <Header key={index}>
               {" "}
               {/* Ajusta a largura do card */}
