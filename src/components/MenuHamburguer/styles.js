@@ -12,11 +12,13 @@ export const Container = styled.nav`
     height: 100vh;
     clip-path: circle(100px at 90% -15%);
     transition: clip-path 1s ease-out;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     pointer-events: none;
     background: black;
     z-index: 500;
+    gap: 80px;
+    font-size:30px;
   }
 
   &.active ul {
