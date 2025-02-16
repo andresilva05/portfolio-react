@@ -1,47 +1,25 @@
-import {
-  InformationFooter,
-  InfoText,
-  Myname,
-  SocialContainer,
-  SocialLink,
-} from "./styles";
 
-import LinkedInIcon from "../../assets/linkedin.png";
-import PhoneIcon from "../../assets/telefone.png";
-import GmailIcon from "../../assets/logotipo-do-gmail.png";
-
-const renderSocialLinks = () => (
-  <SocialContainer>
-    <SocialLink
-      href="https://www.linkedin.com/in/wilson-andr%C3%A9-de-melo-silva-9b9b39235/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src={LinkedInIcon} alt="LinkedIn" />
-    </SocialLink>
-    <SocialLink
-      href="tel:+5514998467362"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src={PhoneIcon} alt="Telefone" />
-    </SocialLink>
-    <SocialLink
-      href="mailto:andre.silva.dev05@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src={GmailIcon} alt="Gmail" />
-    </SocialLink>
-  </SocialContainer>
-);
+import { InformationFooter, FooterContainer, Myname, InfoText } from "./styles";
+import { MarkGithubIcon } from "@primer/octicons-react";
 
 export default function Footer() {
   return (
     <InformationFooter id="contato">
-      <Myname>Wilson André de Melo Silva</Myname>
-      <InfoText>Para mais informações</InfoText>
-      {renderSocialLinks()}
+      <FooterContainer>
+        <Myname>© 2025 WilsonDev. Todos os direitos reservados.</Myname>
+        <InfoText>
+          <a
+            href="https://github.com/andresilva05"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MarkGithubIcon
+              size={32}
+              style={{ verticalAlign: "initial", color: "#fff" }}
+            />
+          </a>
+        </InfoText>
+      </FooterContainer>
     </InformationFooter>
   );
 }
