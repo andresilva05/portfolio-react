@@ -124,12 +124,12 @@ export const AboutMeContainer = styled.div`
 `;
 
 export const ProfileImage = styled.img`
-  width: 380px;
-  height: 380px;
+  width: 340px; //400px
+  height: 320px;
   border-radius: 100%;
-  border: 2px solid #fa0707;
   object-fit: fill;
-  margin-top: 150px;
+  margin-top: 270px;
+  margin-left: 50px;
 
   @media (max-width: 768px) {
     margin-top: 50px; /* Reduzido em telas médias */
