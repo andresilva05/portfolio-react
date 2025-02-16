@@ -3,7 +3,7 @@ import { TypingContainer } from './styles'; // Importação correta do styled co
 
 export default function TypingAnimation() {
   const [text, setText] = useState(""); // Inicia com texto vazio
-  const fullText = "DESENVOLVEDOR FRONT ENT";
+  const fullText = "DESENVOLVEDOR FRONT END";
 
   useEffect(() => {
     let index = 0;
