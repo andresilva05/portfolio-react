@@ -11,14 +11,13 @@ export const Container = styled.nav`
     width: 100vw;
     height: 100vh;
     clip-path: circle(100px at 90% -15%);
-    transition: clip-path 1s ease-out;
-    justify-content: center;
     align-items: center;
     pointer-events: none;
     background: black;
     z-index: 500;
-    gap: 80px;
-    font-size:30px;
+    gap: 40px;
+    font-size: 30px;
+    padding-top: 125px;
   }
 
   &.active ul {
@@ -66,6 +65,7 @@ export const ContentMobile = styled.div`
   z-index: 1000; /* Define prioridade de exibição acima do menu */
   background-color: transparent; /* Remove fundo */
   cursor: pointer;
+  position: fixed;
 
   @media (min-width: 769px) {
     display: none; /* Esconde o ícone no desktop */
