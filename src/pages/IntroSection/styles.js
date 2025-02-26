@@ -110,33 +110,41 @@ export const NavItem = styled.li`
 
 export const AboutMeContainer = styled.div`
   display: flex;
-  gap: 200px;
+  /* gap: 200px; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px 0 70px;
 
   @media (max-width: 768px) {
     gap: 50px; /* Mantém o ajuste em telas menores */
   }
 
   @media (max-width: 480px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 20px; /* Reduzido ainda mais em telas pequenas */
+    padding: 40px 0 40px 0;
+  }
+  @media (max-width: 430px) {
+    padding-bottom: 184px;
   }
 `;
 
 export const ProfileImage = styled.img`
-  width: 340px; //400px
-  height: 320px;
+  width: 340px;
+  height: 340px;
   border-radius: 100%;
-  object-fit: fill;
-  margin-top: 270px;
-  margin-left: 50px;
+  object-fit: cover;
+  /* margin-top: 270px; */
+  /* margin-left: 50px; */
+  padding: 20px;
 
   @media (max-width: 768px) {
-    margin-top: 50px; /* Reduzido em telas médias */
+    /* margin-top: 50px;  */ /* Reduzido em telas médias */
   }
 
   @media (max-width: 480px) {
-    margin-top: 20px; /* Ajuste menor para telas pequenas */
+    /*  margin-top: 20px; */ /* Ajuste menor para telas pequenas */
   }
 `;
 
@@ -146,7 +154,6 @@ export const MyName = styled.div`
   justify-content: center;
   height: 100vh;
   pointer-events: none;
-  margin-left: 100px;
 
   @media (max-width: 768px) {
     margin-left: 50px;
@@ -157,6 +164,7 @@ export const MyName = styled.div`
 
   @media (max-width: 480px) {
     margin-left: 20px;
+    height: fit-content;
     h1 {
       font-size: 40px; /* Diminuindo ainda mais em telas muito pequenas */
     }
@@ -230,7 +238,6 @@ export const SocialIcons = styled.div`
 
 export const GithubLogo = styled.img``;
 
-
 export const DownloadCv = styled.button`
   border-radius: 26px; /* Manter o border-radius */
   background: #fa0707;
@@ -252,7 +259,7 @@ export const DownloadCv = styled.button`
     box-shadow: 0 0 10px 0 rgba(21, 7, 211, 0);
   }
 
-  a{
+  a {
     text-decoration: none;
     color: #ffffff;
   }
