@@ -47,7 +47,6 @@ export default function IntroSection() {
         <Title>
           Portfo<span>lio</span>
         </Title>
-
         <MenuHamburguer />
       </StyledNav>
       <AboutMeContainer>
@@ -90,13 +89,17 @@ export default function IntroSection() {
           </SocialIcons>
 
           <DownloadCv>
-            <a href="../../assets/Curriculo-Front_end.pdf" download="CV-Wilson-André_Desenvolvedor-FrontEnd.pdf">
+            <a
+              href="../../assets/Curriculo-Front_end.pdf"
+              download="CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
+            >
               Download CV
             </a>
           </DownloadCv>
         </MyName>
-
-        <ProfileImage src={AboutMeImg} />
+        <div style={{ width: "min-content" }}>
+          <ProfileImage src={AboutMeImg} />
+        </div>
       </AboutMeContainer>
     </ContainerHeader>
   );
