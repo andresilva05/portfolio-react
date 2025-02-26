@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const TitleProjects = styled.h2`
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 3rem;
   text-align: center;
   padding-top: 30px;
   font-family: "Montserrat", serif;
   font-weight: bold;
-
 
   @media (max-width: 768px) {
     font-size: 60px;
@@ -19,11 +18,11 @@ export const TitleProjects = styled.h2`
 `;
 
 export const Subtitle = styled.p`
-   font-family: "Montserrat", serif;
-   font-weight: 200;
-   text-align: center;
-   font-size: 20px;
-`
+  font-family: "Montserrat", serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 20px;
+`;
 
 export const CardProjects = styled.div`
   display: flex;
@@ -177,20 +176,20 @@ export const ProjectInfo = styled.div`
   background: rgb(250, 254, 255);
   box-shadow: rgb(250, 254, 255) 0px 0px 20px 20px;
   position: relative;
-  z-index: 2;
+  /* z-index: 1; */
   margin-top: -70px;
   border-radius: 0.8rem;
 `;
 export const ProjectActions = styled.div`
   font-size: 1.5rem;
-  z-index: 3; /* Aumenta o z-index para ficar acima da sombra */
+  /* z-index: 3; Aumenta o z-index para ficar acima da sombra */
   padding-left: 10px;
   display: flex;
 `;
 export const ContaActionButtoniner = styled.div``;
 export const ActionButton = styled.div`
   position: relative;
-  z-index: 4;
+  /* z-index: 1; */
 
   a {
     color: rgb(10, 0, 27);
