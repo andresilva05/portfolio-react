@@ -146,6 +146,19 @@ export const Header = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Distribui os elementos */
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    max-width: 90%;
+    height: auto;
+    padding: 0.8rem;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 95%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
 `;
 
 export const ImgLogo = styled.img`
