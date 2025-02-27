@@ -89,7 +89,12 @@ export default function IntroSection() {
           </SocialIcons>
 
           <DownloadCv>
-            <a href="/Curriculo-Front_end.pdf">Download CV</a>
+            <a
+              href="/Curriculo-Front_end.pdf"
+              download="CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
+            >
+              Download CV
+            </a>
           </DownloadCv>
         </MyName>
         <div style={{ width: "min-content" }}>
