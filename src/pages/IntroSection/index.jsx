@@ -41,6 +41,16 @@ export default function IntroSection() {
     };
   }, []);
 
+  // Função para o download via JavaScript
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "../../assets/Curriculo-Front_end.pdf"; // Caminho do arquivo
+    link.download = "CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"; // Nome do arquivo para download
+    document.body.appendChild(link); // Adiciona o link temporariamente ao body
+    link.click(); // Dispara o click do link
+    document.body.removeChild(link); // Remove o link após o clique
+  };
+
   return (
     <ContainerHeader>
       <StyledNav>
@@ -89,12 +99,7 @@ export default function IntroSection() {
           </SocialIcons>
 
           <DownloadCv>
-            <a
-              href="../../assets/Curriculo-Front_end.pdf"
-              download="CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
-            >
-              Download CV
-            </a>
+            <button onClick={handleDownload}>Download CV</button>
           </DownloadCv>
         </MyName>
         <div style={{ width: "min-content" }}>
