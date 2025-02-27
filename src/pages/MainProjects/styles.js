@@ -154,7 +154,7 @@ export const Header = styled.div`
     padding: 0.8rem;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     max-width: 95%;
     border-radius: 1rem;
     padding: 0.5rem;
