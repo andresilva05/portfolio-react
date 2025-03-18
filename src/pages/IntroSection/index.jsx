@@ -91,7 +91,7 @@ export default function IntroSection() {
           <DownloadCv>
             {/* ✅ Código funcionando: O botão agora baixa o arquivo corretamente */}
             <a
-              href="/Curriculo-Front_end.pdf"
+              href="/CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
               download="CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
             >
               Download CV
