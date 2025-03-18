@@ -30,10 +30,11 @@ import responsivoImg from "../../assets/responsivo.png";
 import netflixImg from "../../assets/netflix.png";
 import starbuksImg from "../../assets/starbucks.png";
 import cronometroImg from "../../assets/crono.png";
+import devburguerImg from "../../assets/img-devburguer.jpg";
 import { Globe } from "phosphor-react";
 import { MarkGithubIcon } from "@primer/octicons-react";
 
-function ProjectCard({ imagem, titulo, descricao, link }) {
+function ProjectCard({ imagem, titulo, descricao, link, linkGit }) {
   return (
     <Card>
       <ImgProject
@@ -43,10 +44,34 @@ function ProjectCard({ imagem, titulo, descricao, link }) {
       />
       <TitleProject>{titulo}</TitleProject>
       <TextProject>{descricao}</TextProject>
+
+      {/* Exibir link para acessar o projeto */}
       {link && link !== "#" && (
         <LinkProject href={link} target="_blank" rel="noopener noreferrer">
           Acessar Projeto
         </LinkProject>
+      )}
+
+      {/* Verifica se o projeto é o "DevBurguer" e exibe dois botões de GitHub */}
+      {titulo === "DevBurguer" &&
+        linkGit &&
+        linkGit.length > 0 &&
+        linkGit.map((gitLink, index) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+          <ActionButton key={index}>
+            <a href={gitLink} target="_blank" rel="noopener noreferrer">
+              <MarkGithubIcon size={32} style={{ verticalAlign: "initial" }} />
+            </a>
+          </ActionButton>
+        ))}
+
+      {/* Exibir um único botão de GitHub para outros projetos */}
+      {titulo !== "DevBurguer" && linkGit && (
+        <ActionButton>
+          <a href={linkGit} target="_blank" rel="noopener noreferrer">
+            <MarkGithubIcon size={32} style={{ verticalAlign: "initial" }} />
+          </a>
+        </ActionButton>
       )}
     </Card>
   );
@@ -57,6 +82,17 @@ export default function MainProjects() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const projects = [
+    {
+      imagem: devburguerImg,
+      titulo: "DevBurguer",
+      descricao:
+        "Um sistema completo para gerenciamento de pedidos em um restaurante, desenvolvido com React no frontend e Node.js + Express no backend. Utiliza Sequelize para a integração com PostgreSQL, garantindo um fluxo eficiente entre cliente e servidor. O projeto segue boas práticas de código e é projetado para ser escalável e intuitivo.",
+      link: null,
+      linkGit: [
+        "https://github.com/andresilva05/devburguer-interface",
+        "https://github.com/andresilva05/devburguer-api",
+      ],
+    },
     {
       imagem: burguerImg,
       titulo: "CodeClub Burguer",
@@ -163,25 +199,62 @@ export default function MainProjects() {
               </ProjectInfo>
               <ProjectActions>
                 <ActionButton>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Globe size={32} />
-                  </a>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Globe size={32} />
+                    </a>
+                  )}
                 </ActionButton>
+
                 <ActionButton>
-                  <a
-                    href={project.linkGit}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MarkGithubIcon
-                      size={32}
-                      style={{ verticalAlign: "initial" }}
-                    />
-                  </a>
+                  {Array.isArray(project.linkGit) &&
+                  project.linkGit.length > 1 ? (
+                    // Se houver mais de um link, renderiza dois ícones com textos abaixo, na mesma linha
+                    project.linkGit.map((gitLink, index) => (
+                      <div
+                        // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                        key={index}
+                        style={{
+                          display: "inline-flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                          marginRight: "20px",
+                        }}
+                      >
+                        <a
+                          href={gitLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ display: "block", marginBottom: "5px" }} // Espaço entre ícone e texto
+                        >
+                          <MarkGithubIcon
+                            size={32}
+                            style={{ verticalAlign: "initial" }}
+                          />
+                        </a>
+                        <span style={{ fontSize: "12px", color: "#555" }}>
+                          {index === 0 ? "Front-end" : "Back-end"}{" "}
+                          {/* Texto dinâmico */}
+                        </span>
+                      </div>
+                    ))
+                  ) : (
+                    // Caso contrário, renderiza um único ícone
+                    <a
+                      href={project.linkGit}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MarkGithubIcon
+                        size={32}
+                        style={{ verticalAlign: "initial" }}
+                      />
+                    </a>
+                  )}
                 </ActionButton>
               </ProjectActions>
             </Header>
