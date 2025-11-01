@@ -46,34 +46,12 @@ export const AboutTitle = styled.h2`
   }
 `;
 
-export const AboutText = styled.p`
-  color: #ffffff;
-  font-size: 25px;
-  opacity: 0.5;
-  text-align: justify;
-  padding: 100px; //70px
-  line-height: 1.2;
-
-  @media (max-width: 768px) {
-    font-size: 18px;
-    padding: 50px; //70px
-    text-align: left;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 16px;
-    padding: 30px; //70px
-    text-align: left;
-  }
-`;
-
 export const ContainerSkill = styled.div`
   text-align: center;
 
   display: flex;
   flex-direction: column;
   cursor: pointer;
-
 
   h1 {
     color: #fff;
