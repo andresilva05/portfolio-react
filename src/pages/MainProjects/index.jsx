@@ -31,6 +31,8 @@ import netflixImg from "../../assets/netflix.png";
 import starbuksImg from "../../assets/starbucks.png";
 import cronometroImg from "../../assets/crono.png";
 import devburguerImg from "../../assets/img-devburguer.jpg";
+import bibliotecaImg from "../../assets/biblioteca.png";
+import sistemaProdutosImg from "../../assets/sistema-produtos.png";
 import { Globe } from "phosphor-react";
 import { MarkGithubIcon } from "@primer/octicons-react";
 
@@ -116,6 +118,23 @@ export default function MainProjects() {
         "Projeto Burguer é uma aplicação simples que demonstra operações básicas usando botões interativos. Os botões permitem mostrar todos os produtos, aplicar desconto, somar os preços totais e filtrar produtos veganos de uma lista fictícia de hambúrgueres, e utiliza formatação de moeda em reais para exibir os preços dos produtos.",
       link: "https://burguermenu.netlify.app/",
       linkGit: "https://github.com/andresilva05/PROJETO-BURGUER",
+    },
+    {
+      imagem: bibliotecaImg,
+      titulo: "Sistema de Biblioteca em C",
+      descricao:
+        "Projeto desenvolvido em C para gerenciamento de livros. Permite cadastrar, listar, excluir e buscar livros, além de gerar relatórios sobre estoque e preços. Aplicação feita em modo console, estruturada em múltiplos arquivos e com foco em organização e boas práticas de código.",
+      link: null,
+      linkGit: "https://github.com/andresilva05/sistema-controle-biblioteca",
+    },
+    {
+      imagem: sistemaProdutosImg,
+      titulo: "Sistema de Cadastro de Produtos (Java POO)",
+      descricao:
+        "Um sistema feito em Java para cadastrar e organizar produtos, unindo lógica, classes e boas práticas de POO.",
+      link: null,
+      linkGit:
+        "https://github.com/andresilva05/FACULDADE-2-SEMESTRE/tree/main/poo/src/aulas/pre_atividade_avaliativa_23_10/Exercicio",
     },
     {
       imagem: sorteioImg,
