@@ -89,7 +89,6 @@ export default function IntroSection() {
           </SocialIcons>
 
           <DownloadCv>
-            {/* ✅ Código funcionando: O botão agora baixa o arquivo corretamente */}
             <a
               href="/CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
               download="CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
