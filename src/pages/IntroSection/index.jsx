@@ -90,8 +90,8 @@ export default function IntroSection() {
 
           <DownloadCv>
             <a
-              href="/CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
-              download="CV-Wilson-André_Desenvolvedor-FrontEnd.pdf"
+              href="/public/CV-FRONT-END-WS.pdf"
+              download="CV-Wilson-André.pdf"
             >
               Download CV
             </a>
