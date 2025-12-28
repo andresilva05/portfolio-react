@@ -33,6 +33,8 @@ import cronometroImg from "../../assets/crono.png";
 import devburguerImg from "../../assets/img-devburguer.jpg";
 import bibliotecaImg from "../../assets/biblioteca.png";
 import sistemaProdutosImg from "../../assets/sistema-produtos.png";
+import gestaoEstoqueImg from "../../assets/gestaoEstoque.png";
+import swapiImg from "../../assets/swapiImg.png";
 import { Globe } from "phosphor-react";
 import { MarkGithubIcon } from "@primer/octicons-react";
 
@@ -104,6 +106,14 @@ export default function MainProjects() {
       linkGit: "https://github.com/andresilva05/DESAFIO-CODECLUB-BURGUER",
     },
     {
+      imagem: swapiImg,
+      titulo: "Star Wars Universe Explorer",
+      descricao:
+        "Um sistema completo para explorar o universo Star Wars, desenvolvido com JavaScript no frontend e consumo da SWAPI (Star Wars API) pública. Utilizamos um sistema de cache inteligente com localStorage e Bootstrap para uma experiência responsiva e performática. O projeto segue boas práticas de código modular e é projetado para ser escalável com navegação fluida entre recursos relacionados.",
+      link: "https://swapiproject.netlify.app/",
+      linkGit: "https://github.com/andresilva05/swapi-project",
+    },
+    {
       imagem: contaUserImg,
       titulo: "Cadastro Usuários",
       descricao:
@@ -112,10 +122,26 @@ export default function MainProjects() {
       linkGit: "https://github.com/andresilva05/GERENCIADOR-USUARIOS",
     },
     {
+      imagem: gestaoEstoqueImg,
+      titulo: "Sistema de Gestão de Estoque",
+      descricao: "Um sistema completo para controle de estoque, clientes e vendas desenvolvido em Java com Programação Orientada a Objetos. Implementa CRUD completo para produtos, clientes PF/PJ com validação de documentos, e vendas integradas com baixa automática de estoque. O projeto utiliza arquitetura em camadas (Models, Repositories, Services) e interface gráfica com Swing para uma experiência interativa e intuitiva.",
+      link: null,
+      linkGit: "https://github.com/andresilva05/SistemadeGestaoDeEstoque",
+    },
+    {
+      imagem: sistemaProdutosImg,
+      titulo: "Sistema de Cadastro de Produtos (Java POO)",
+      descricao:
+      "Um sistema feito em Java para cadastrar e organizar produtos, unindo lógica, classes e boas práticas de POO.",
+      link: null,
+      linkGit:
+      "https://github.com/andresilva05/FACULDADE-2-SEMESTRE/tree/main/poo/src/aulas/pre_atividade_avaliativa_23_10/Exercicio",
+    },
+    {
       imagem: burguerMenu,
       titulo: "Burguer Menu",
       descricao:
-        "Projeto Burguer é uma aplicação simples que demonstra operações básicas usando botões interativos. Os botões permitem mostrar todos os produtos, aplicar desconto, somar os preços totais e filtrar produtos veganos de uma lista fictícia de hambúrgueres, e utiliza formatação de moeda em reais para exibir os preços dos produtos.",
+      "Projeto Burguer é uma aplicação simples que demonstra operações básicas usando botões interativos. Os botões permitem mostrar todos os produtos, aplicar desconto, somar os preços totais e filtrar produtos veganos de uma lista fictícia de hambúrgueres, e utiliza formatação de moeda em reais para exibir os preços dos produtos.",
       link: "https://burguermenu.netlify.app/",
       linkGit: "https://github.com/andresilva05/PROJETO-BURGUER",
     },
@@ -123,18 +149,9 @@ export default function MainProjects() {
       imagem: bibliotecaImg,
       titulo: "Sistema de Biblioteca em C",
       descricao:
-        "Projeto desenvolvido em C para gerenciamento de livros. Permite cadastrar, listar, excluir e buscar livros, além de gerar relatórios sobre estoque e preços. Aplicação feita em modo console, estruturada em múltiplos arquivos e com foco em organização e boas práticas de código.",
+      "Projeto desenvolvido em C para gerenciamento de livros. Permite cadastrar, listar, excluir e buscar livros, além de gerar relatórios sobre estoque e preços. Aplicação feita em modo console, estruturada em múltiplos arquivos e com foco em organização e boas práticas de código.",
       link: null,
       linkGit: "https://github.com/andresilva05/sistema-controle-biblioteca",
-    },
-    {
-      imagem: sistemaProdutosImg,
-      titulo: "Sistema de Cadastro de Produtos (Java POO)",
-      descricao:
-        "Um sistema feito em Java para cadastrar e organizar produtos, unindo lógica, classes e boas práticas de POO.",
-      link: null,
-      linkGit:
-        "https://github.com/andresilva05/FACULDADE-2-SEMESTRE/tree/main/poo/src/aulas/pre_atividade_avaliativa_23_10/Exercicio",
     },
     {
       imagem: sorteioImg,

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Texto = styled.p`
   color: #ffffff;
-  font-size: 25px;
+  font-size: 30px;
   opacity: 0.5;
   text-align: justify;
   padding: 100px; //70px
