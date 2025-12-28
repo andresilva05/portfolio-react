@@ -109,7 +109,7 @@ export default function MainProjects() {
       imagem: swapiImg,
       titulo: "Star Wars Universe Explorer",
       descricao:
-        "Um sistema completo para explorar o universo Star Wars, desenvolvido com JavaScript no frontend e consumo da SWAPI (Star Wars API) pública. Utilizamos um sistema de cache inteligente com localStorage e Bootstrap para uma experiência responsiva e performática. O projeto segue boas práticas de código modular e é projetado para ser escalável com navegação fluida entre recursos relacionados.",
+        "Um sistema para explorar o universo Star Wars, desenvolvido em JavaScript com consumo da SWAPI. Conta com cache via localStorage, interface responsiva com Bootstrap e navegação fluida entre recursos, seguindo boas práticas de código modular e foco em performance e escalabilidade.",
       link: "https://swapiproject.netlify.app/",
       linkGit: "https://github.com/andresilva05/swapi-project",
     },
