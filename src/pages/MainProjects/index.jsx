@@ -124,7 +124,7 @@ export default function MainProjects() {
     {
       imagem: gestaoEstoqueImg,
       titulo: "Sistema de Gestão de Estoque",
-      descricao: "Um sistema completo para controle de estoque, clientes e vendas desenvolvido em Java com Programação Orientada a Objetos. Implementa CRUD completo para produtos, clientes PF/PJ com validação de documentos, e vendas integradas com baixa automática de estoque. O projeto utiliza arquitetura em camadas (Models, Repositories, Services) e interface gráfica com Swing para uma experiência interativa e intuitiva.",
+      descricao: "Um sistema de controle de estoque, clientes e vendas desenvolvido em Java com POO. Possui CRUD de produtos, clientes PF/PJ com validação de documentos, vendas com baixa automática de estoque e arquitetura em camadas (Models, Repositories, Services), além de interface gráfica em Swing.",
       link: null,
       linkGit: "https://github.com/andresilva05/SistemadeGestaoDeEstoque",
     },
